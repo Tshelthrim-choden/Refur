@@ -1,0 +1,33 @@
+.why-us {
+    text-align: center;
+    margin: 20px auto; /* Center the section with some margin on top and bottom */
+  }
+  
+  .why-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Set text color */
+  }
+  
+  .point-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: space-around; /* Center items horizontally with some space around them */
+  }
+  
+  .point {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .point-icon {
+    font-size: 48px; /* Adjust the size of the icon */
+    color: #555; /* Set icon color */
+  }
+  
+  .point-text {
+    font-size: 16px;
+    color: #555; /* Set text color */
+    margin-top: 10px;
+  }
+  
