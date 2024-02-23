@@ -29,7 +29,9 @@ const Header: React.FC = () => {
 
   return (
     <header>
-      <h1>Refur</h1>
+      <div className="logo-container">
+        <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Refur Logo" className="logo" />
+      </div>
       <nav>
         <ul>
           <li>Categories</li>
