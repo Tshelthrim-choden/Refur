@@ -1,8 +1,12 @@
 // Header.tsx
-import React, { useState, useEffect, useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
-import './header.css';
+import React, { useState, useEffect, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSearch,
+  faShoppingCart,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
+import "./header.css";
 
 const Header: React.FC = () => {
   const [isLoginOverlayOpen, setLoginOverlayOpen] = useState(false);
@@ -20,17 +24,22 @@ const Header: React.FC = () => {
   };
 
   useEffect(() => {
-    document.addEventListener('click', handleDocumentClick);
+    document.addEventListener("click", handleDocumentClick);
 
     return () => {
-      document.removeEventListener('click', handleDocumentClick);
+      document.removeEventListener("click", handleDocumentClick);
     };
   }, []);
 
   return (
     <header>
       <div className="logo-container">
-        <img src={process.env.PUBLIC_URL + '/logo.png'} alt="Refur Logo" className="logo" />
+        <img
+          src={process.env.PUBLIC_URL + "/logo.png"}
+          alt="Refur Logo"
+          className="logo"
+          style={{ width: "150px", height: "auto" }} // Adjust the width as per your requirement
+        />
       </div>
       <nav>
         <ul>
